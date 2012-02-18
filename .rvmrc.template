@@ -1,0 +1,2 @@
+rvm use 1.9.3-p0@app-server --create
+export USE_BUNDLER=force
