@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @wine.name %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @wine.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @wine.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_wine_path(@wine) %> |
+<%= link_to 'Back', wines_path %>

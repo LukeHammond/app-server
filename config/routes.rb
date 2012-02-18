@@ -1,4 +1,10 @@
 AppServer::Application.routes.draw do
+  resources :cheeses
+
+  resources :wines
+
+  resources :bread
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
