@@ -1,7 +1,5 @@
-require "app-server/version"
+module AppServer
+  require 'auto_extendible/base'
+ end
 
-module App
-  module Server
-    # Your code goes here...
-  end
-end
+require 'app-server/engine'
