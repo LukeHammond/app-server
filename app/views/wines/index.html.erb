@@ -3,18 +3,12 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Created at</th>
-    <th>Updated at</th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
 
 <% @wines.each do |wine| %>
   <tr>
     <td><%= wine.name %></td>
-    <td><%= wine.created_at %></td>
-    <td><%= wine.updated_at %></td>
     <td><%= link_to 'Show', wine %></td>
     <td><%= link_to 'Edit', edit_wine_path(wine) %></td>
     <td><%= link_to 'Destroy', wine, confirm: 'Are you sure?', method: :delete %></td>

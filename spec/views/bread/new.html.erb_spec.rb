@@ -11,7 +11,7 @@ describe "bread/new" do
     render
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "form", :action => bread_path, :method => "post" do
+    assert_select "form", :action => breads_path, :method => "post" do
       assert_select "input#bread_name", :name => "bread[name]"
     end
   end

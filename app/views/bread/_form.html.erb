@@ -1,4 +1,4 @@
-<%= form_for(@bread, :url => bread_path) do |f| %>
+<%= form_for @bread do |f| %>
   <% if @bread.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@bread.errors.count, "error") %> prohibited this bread from being saved:</h2>

@@ -3,18 +3,12 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Created at</th>
-    <th>Updated at</th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
 
 <% @bread.each do |bread| %>
   <tr>
     <td><%= bread.name %></td>
-    <td><%= bread.created_at %></td>
-    <td><%= bread.updated_at %></td>
     <td><%= link_to 'Show', bread %></td>
     <td><%= link_to 'Edit', edit_bread_path(bread) %></td>
     <td><%= link_to 'Destroy', bread, confirm: 'Are you sure?', method: :delete %></td>

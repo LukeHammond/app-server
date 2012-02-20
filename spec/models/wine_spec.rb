@@ -1,5 +1,7 @@
 require 'spec_helper'
 
 describe Wine do
-  pending "add some examples to (or delete) #{__FILE__}"
+  subject { FactoryGirl.build(:wine) }
+
+  it { should have_many(:meals) }
 end

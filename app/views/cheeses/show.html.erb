@@ -5,16 +5,6 @@
   <%= @cheese.name %>
 </p>
 
-<p>
-  <b>Created at:</b>
-  <%= @cheese.created_at %>
-</p>
-
-<p>
-  <b>Updated at:</b>
-  <%= @cheese.updated_at %>
-</p>
-
 
 <%= link_to 'Edit', edit_cheese_path(@cheese) %> |
 <%= link_to 'Back', cheeses_path %>

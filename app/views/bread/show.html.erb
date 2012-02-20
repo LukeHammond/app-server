@@ -5,16 +5,6 @@
   <%= @bread.name %>
 </p>
 
-<p>
-  <b>Created at:</b>
-  <%= @bread.created_at %>
-</p>
-
-<p>
-  <b>Updated at:</b>
-  <%= @bread.updated_at %>
-</p>
-
 
 <%= link_to 'Edit', edit_bread_path(@bread) %> |
-<%= link_to 'Back', bread_path %>
+<%= link_to 'Back', bread_index_path %>

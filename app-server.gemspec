@@ -17,10 +17,13 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-  
+
   s.add_dependency 'rails'
   s.add_dependency 'mysql2'
+  s.add_dependency 'sass-rails',  '~> 3.1.0'
 
   s.add_development_dependency 'rspec-rails'
-  
+  s.add_development_dependency 'factory_girl'
+  s.add_development_dependency 'shoulda-matchers'
+  s.add_development_dependency 'database_cleaner'
 end

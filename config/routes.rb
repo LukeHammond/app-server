@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
+
   resources :cheeses
 
   resources :wines
 
   resources :bread
+  match "breads" => "bread#show"
+
+  resources :meals
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
