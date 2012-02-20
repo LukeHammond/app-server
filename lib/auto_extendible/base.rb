@@ -48,7 +48,7 @@ module AppServer
       
       module Config
         def auto_extendible
-          mod =  ModelExtensions.const_get(self.name) rescue nil
+          mod =  "ModelExtensions::#{self.name}".constantize rescue nil
           self.send(:include, mod) if mod.present?
         end
       end
