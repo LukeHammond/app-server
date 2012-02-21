@@ -6,6 +6,12 @@ PATH
       rails
       sass-rails (~> 3.1.0)
 
+PATH
+  remote: ../auto-observer
+  specs:
+    auto-observer (0.0.1)
+      rails
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -118,6 +124,7 @@ PLATFORMS
 
 DEPENDENCIES
   app-server!
+  auto-observer!
   database_cleaner
   factory_girl
   rspec-rails
