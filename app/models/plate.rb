@@ -1,11 +1,13 @@
 class Plate
+  include AutoObserver
 
-  CALLBACKS = [:clean]
+  auto_observer_callbacks :clean, :only => [:after, :before]
+
 
   def clean
     puts "I am being scrubbed good and squeaky"
   end
 
-  include AutoObserver
+  include AutoObserver::AliasMethodBind
 end
   
